@@ -79,7 +79,16 @@
     margin-left: 656.18px;
 
 }
-.picture-magazine-heading:hover{
+
+.img-magazine-logo{
+    overflow: hidden;
+}
+
+.picture-magazine-heading .img-magazine-logo {
+    transition: transform 0.5s;
+}
+
+.picture-magazine-heading:hover .img-magazine-logo{
     transform: scale(1.1);
 }
 .date-magazine-main{
@@ -512,22 +521,20 @@
     margin-bottom: 31px;
     font-size: 48px;
     color: #000000;
-    /* animation: heading-part6-animation 1.5s infinite; */
+    overflow: hidden;
+    animation: running-text 5s linear infinite;
 }
-/* @keyframes heading-part6-animation{
+
+@keyframes running-text {
     0%{
-        transform: scale(1.1);
-        opacity: 1;
+        transform: translateX(100%);
     }
-    50%{
-        transform: scale(1.1);
-        opacity: 0.8;
-    }
+
     100%{
-        transform: scale(1.1);
-        opacity: 1;
+        transform: translateX(-100%);
     }
-} */
+}
+
  .hr-end-heading-part6{
     width: 1731.84px;
  }
@@ -537,6 +544,9 @@
     margin-left: 741.98px;
     margin-top: 177px;
  }
+ .li-href-about{
+    text-decoration: none;
+}
  .link{
     margin-left: 35.6px;
  }
